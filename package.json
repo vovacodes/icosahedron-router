@@ -1,0 +1,34 @@
+{
+  "name": "icosahedron-router",
+  "version": "0.1.0",
+  "description": "Router implementation, extends Backbone.Router, allows to map route handlers to the methods of another object (a la Marionette.Approuter) and provides 'beforeRoute' hook that could be used for implementing custom initialization logic or route filtering (a la Backbone.Routefilter). ",
+  "main": "icosahedron-router.js",
+  "scripts": {
+    "test": "gulp specs"
+  },
+  "keywords": [
+    "router",
+    "backbone",
+    "filter",
+    "commonjs",
+    "browserify"
+  ],
+  "author": "Vladimir Guguiev <wizardzloy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.3.3",
+    "chai": "^1.10.0",
+    "end-of-stream": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-mocha-phantomjs": "^0.5.1",
+    "jquery": "^2.1.1",
+    "mocha": "^2.0.1",
+    "send": "^0.10.1",
+    "sinon": "^1.12.1",
+    "sinon-chai": "^2.6.0"
+  }
+}
