@@ -1,9 +1,10 @@
 'use strict';
 
-var _ = require('underscore');
-var Backbone = require('backbone');
+var result = require('amp-result');
+var ampHistory = require('ampersand-router/ampersand-history');
+var Router = require('ampersand-router');
 
-var IcosahedronRouter = Backbone.Router.extend({
+var IcosahedronRouter = Router.extend({
 
   initialize: function() {},
 
@@ -13,7 +14,8 @@ var IcosahedronRouter = Backbone.Router.extend({
     if (options.controller) this.controller = options.controller;
     if (options.routes) this.routes = options.routes;
 
-    this.routes = _.result(this, 'routes');
+    this.history = options.history || ampHistory;
+    this.routes = result(this, 'routes');
     this._bindRoutes();
 
     this.initialize.apply(this, arguments);

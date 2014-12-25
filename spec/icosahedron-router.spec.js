@@ -1,11 +1,7 @@
-// setup dependencies
-var $ = require('jquery');
-var Backbone = require('backbone');
-Backbone.$ = $;
-
 var sinon = require('sinon');
 var sandbox = sinon.sandbox.create();
 
+var ampHistory = require('ampersand-router/ampersand-history');
 var IcosahedronRouter = require('../icosahedron-router');
 
 function generateRandomNumericString() {
@@ -19,7 +15,7 @@ describe('IcosahedronRouter', function() {
   });
 
   afterEach(function() {
-    Backbone.history.stop();
+    ampHistory.stop();
   });
 
   describe('when a route is configured with a function', function() {
@@ -33,7 +29,7 @@ describe('IcosahedronRouter', function() {
         }
       });
       var param = generateRandomNumericString();
-      Backbone.history.start();
+      ampHistory.start();
 
       // when
       router.navigate('foo/' + param, true);
@@ -57,7 +53,7 @@ describe('IcosahedronRouter', function() {
       });
       var param = generateRandomNumericString();
       var router = new Router();
-      Backbone.history.start();
+      ampHistory.start();
 
       // when
       router.navigate('foo/' + param, true);
@@ -75,7 +71,7 @@ describe('IcosahedronRouter', function() {
       var routeHandler = sandbox.stub();
       var controller = {
         qux: routeHandler
-      }
+      };
       var Router = IcosahedronRouter.extend({
         controller: controller,
         routes: {
@@ -84,7 +80,7 @@ describe('IcosahedronRouter', function() {
       });
       var param = generateRandomNumericString();
       var router = new Router();
-      Backbone.history.start();
+      ampHistory.start();
 
       // when
       router.navigate('foo/' + param, true);
@@ -113,7 +109,7 @@ describe('IcosahedronRouter', function() {
       });
       var param = generateRandomNumericString();
       var router = new Router();
-      Backbone.history.start();
+      ampHistory.start();
 
       // when
       router.navigate('foo/' + param, true);
@@ -137,7 +133,7 @@ describe('IcosahedronRouter', function() {
         }
       });
       var router = new Router();
-      Backbone.history.start();
+      ampHistory.start();
 
       // when
       router.navigate('foo', true);

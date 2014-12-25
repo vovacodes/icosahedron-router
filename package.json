@@ -8,6 +8,7 @@
   },
   "keywords": [
     "router",
+    "ampersand",
     "backbone",
     "filter",
     "commonjs",
@@ -20,8 +21,8 @@
     "url": "git://github.com/wizardzloy/icosahedron-router"
   },
   "dependencies": {
-    "backbone": "^1.1.2",
-    "underscore": "^1.7.0"
+    "amp-result": "^1.0.1",
+    "ampersand-router": "^1.0.6"
   },
   "devDependencies": {
     "browserify": "^6.3.3",
@@ -29,7 +30,6 @@
     "end-of-stream": "^1.1.0",
     "gulp": "^3.8.10",
     "gulp-mocha-phantomjs": "^0.5.1",
-    "jquery": "^2.1.1",
     "mocha": "^2.0.1",
     "send": "^0.10.1",
     "sinon": "^1.12.1",
