@@ -1,7 +1,7 @@
 {
   "name": "icosahedron-router",
-  "version": "0.1.0",
-  "description": "Router implementation, extends Backbone.Router, allows to map route handlers to the methods of another object (a la Marionette.Approuter) and provides 'beforeRoute' hook that could be used for implementing custom initialization logic or route filtering (a la Backbone.Routefilter). ",
+  "version": "0.2.0",
+  "description": "Router implementation, extends 'ampersand-router', allows to map route handlers to the methods of another object (a la Marionette.Approuter) and provides 'beforeRoute' hook that could be used for implementing custom initialization logic or route filtering (a la Backbone.Routefilter). ",
   "main": "icosahedron-router.js",
   "keywords": [
     "router",
