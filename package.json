@@ -22,7 +22,7 @@
     "ampersand-router": "^1.0.6"
   },
   "devDependencies": {
-    "browserify": "^6.3.3",
+    "browserify": "^8.0.1",
     "chai": "^1.10.0",
     "es5-shim": "^4.0.5",
     "http-server": "^0.7.4",
@@ -33,7 +33,7 @@
     "zuul": "^1.16.3"
   },
   "scripts": {
-    "test": "zuul -- spec/specs.js",
+    "test": "npm run test-phantom && zuul -- spec/specs.js",
     "test-phantom": "zuul --phantom -- spec/specs.js",
     "test-browser": "npm run browserify-spec && npm run test-browser-hint && npm run serve",
     "browserify-spec": "browserify spec/specs.js -o spec/specs-bundle.js",
