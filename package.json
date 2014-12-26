@@ -37,17 +37,9 @@
     "harness": "mocha-bdd",
     "files": "spec/specs.js",
     "browsers": [
-      "ie/9..latest",
-      "chrome/latest",
-      "chrome/canary",
-      "ff/latest",
-      "firefox/nightly",
-      "opera/12..latest",
-      "opera/next",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest",
-      "android-browser/4.2..latest"
+
+      "chrome/latest"
+
     ]
   },
   "scripts": {
