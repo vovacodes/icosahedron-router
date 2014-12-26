@@ -2,6 +2,9 @@
 # Icosahedron Router
 
 [![build status](https://secure.travis-ci.org/wizardzloy/icosahedron-router.png)](https://travis-ci.org/wizardzloy/icosahedron-router#)
+[![Dependency Status](https://david-dm.org/wizardzloy/icosahedron-router.svg)](https://david-dm.org/wizardzloy/icosahedron-router)
+[![Dev Dependency Status](https://david-dm.org/wizardzloy/icosahedron-router/dev-status.svg)](https://david-dm.org/wizardzloy/icosahedron-router)
+
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/wizardzloy.svg)](https://saucelabs.com/u/wizardzloy)
 
 Router implementation, extends [__'ampersand-router'__](https://github.com/AmpersandJS/ampersand-router), allows
