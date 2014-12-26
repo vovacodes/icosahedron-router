@@ -5,9 +5,11 @@
     <title>Test Runner</title>
     <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
     <script src="../node_modules/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd');</script>
 </head>
 <body>
 <div id="mocha"></div>
 <script src="./specs-bundle.js"></script>
+<script>mocha.run();</script>
 </body>
 </html>
