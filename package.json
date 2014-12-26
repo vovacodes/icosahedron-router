@@ -30,21 +30,14 @@
     "phantomjs": "^1.9.13",
     "sinon": "^1.12.1",
     "sinon-chai": "^2.6.0",
-    "tap-spec": "^2.1.2",
-    "testling": "^1.7.1"
+    "zuul": "^1.16.3"
   },
   "scripts": {
-    "test": "testling | tap-spec",
+    "test": "zuul -- spec/specs.js",
+    "test-phantom": "zuul --phantom -- spec/specs.js",
     "test-browser": "npm run browserify-spec && npm run test-browser-hint && npm run serve",
     "browserify-spec": "browserify spec/specs.js -o spec/specs-bundle.js",
     "test-browser-hint": "echo \"To run tests in browser visit:\n\n\\033[0;35mhttp://localhost:9999/spec/specRunner.html \\033[0m\"",
     "serve": "http-server -p 9999 -s"
-  },
-  "testling": {
-    "harness": "mocha-bdd",
-    "files": "spec/specs.js",
-    "browsers": [
-      "chrome/22..latest"
-    ]
   }
 }
